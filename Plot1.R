@@ -28,6 +28,8 @@ dataFeb$Global_active_power <- as.numeric(as.character(dataFeb$Global_active_pow
 hist(dataFeb$Global_active_power, main="Global Active Power",  xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 
 ## Copy from screen to png file
-dev.copy(png,"./plot1.png")
+## dev.copy(png,"./plot1.png")
+dev.print(png, file="./plot1.png", width=480, height=480)
+
 dev.off()
 

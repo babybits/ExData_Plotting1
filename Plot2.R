@@ -31,6 +31,8 @@ dataFeb$DateTime <- as.POSIXct(paste(dataFeb$Date, dataFeb$Time), format="%d/%m/
 plot(dataFeb$DateTime,dataFeb$Global_active_power, type="l",xlab="", ylab="Global Active Power (kilowatts)")
 
 ## Copy from screen to png file
-dev.copy(png,"./plot2.png")
+## dev.copy(png,"./plot2.png")
+dev.print(png, file="./plot2.png", width=480, height=480)
+
 dev.off()
 
